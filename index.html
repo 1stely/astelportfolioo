@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astel Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- THICK ROOTS -->
+    <div class="root root-1 left"></div>
+    <div class="root root-2 right"></div>
+    <div class="root root-3 left"></div>
+    <div class="root root-4 right"></div>
+    <div class="root root-5 left"></div>
+    <div class="root root-6 right"></div>
+
+    <nav>
+        <div class="logo">ASTEL<span class="orange-text">.</span></div>
+        <div class="nav-right">
+            <a href="#work">WORK</a>
+            <a href="#grading">GRADING</a>
+            <a href="#saas">SaaS</a>
+            <a href="#experience">EXPERIENCE</a>
+            <div class="divider"></div>
+            <a href="https://www.instagram.com/1stely/" target="_blank" class="social-icon">IG</a>
+            <a href="https://www.tiktok.com/@1stely" target="_blank" class="social-icon">TK</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <p class="hero-top-text">EDITOR & MOTION DESIGNER</p>
+            <h1 class="hero-main-title">CRAFTING VISUAL<br>STORIES THAT <span class="orange-text">STICK.</span></h1>
+            <a href="#work" class="view-projects">VIEW PROJECTS ↓</a>
+        </div>
+    </header>
+
+    <section id="work" class="portfolio">
+        <p class="section-label">SELECTED WORK</p>
+        <div class="grid">
+            <div class="card" onclick="openVid('video1.mp4', 'vertical')">
+                <div class="video-box">
+                    <video muted loop autoplay playsinline preload="auto"><source src="video1.mp4#t=0.001" type="video/mp4"></video>
+                    <div class="overlay"><div class="text"><h3>AIRBNB SCALING</h3><p>SHORT-FORM</p></div></div>
+                </div>
+            </div>
+            <div class="card" onclick="openVid('video2.mp4', 'vertical')">
+                <div class="video-box">
+                    <video muted loop autoplay playsinline preload="auto"><source src="video2.mp4#t=0.001" type="video/mp4"></video>
+                    <div class="overlay"><div class="text"><h3>VIRAL GROWTH</h3><p>MOTION GRAPHICS</p></div></div>
+                </div>
+            </div>
+            <div class="card" onclick="openVid('video3.mp4', 'vertical')">
+                <div class="video-box">
+                    <video muted loop autoplay playsinline preload="auto"><source src="video3.mp4#t=0.001" type="video/mp4"></video>
+                    <div class="overlay"><div class="text"><h3>DISCIPLINE</h3><p>NARRATIVE</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grading" class="grading-section">
+        <p class="section-label">COLOR CORRECTION / GRADING</p>
+        <div class="grading-grid">
+            <div class="comparison-container" style="--position: 50%;">
+                <div class="image-after" style="background-image: url('after.jpg');"></div>
+                <div class="image-before" style="background-image: url('before.jpg');"></div>
+                <input type="range" min="0" max="100" value="50" class="slider-input" oninput="this.parentElement.style.setProperty('--position', this.value + '%')">
+                <div class="slider-line"></div>
+                <div class="slider-button"></div>
+                <div class="label-tag after">AFTER</div>
+                <div class="label-tag before">BEFORE</div>
+            </div>
+            <div class="comparison-container" style="--position: 50%;">
+                <div class="image-after" style="background-image: url('after2.jpg');"></div>
+                <div class="image-before" style="background-image: url('before2.jpg');"></div>
+                <input type="range" min="0" max="100" value="50" class="slider-input" oninput="this.parentElement.style.setProperty('--position', this.value + '%')">
+                <div class="slider-line"></div>
+                <div class="slider-button"></div>
+                <div class="label-tag after">AFTER</div>
+                <div class="label-tag before">BEFORE</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="saas" class="saas-section">
+        <p class="section-label">SaaS VIDEOS</p>
+        <div class="saas-grid">
+            <div class="saas-card" onclick="openVid('saas-video.mp4', 'horizontal')">
+                <div class="saas-video-box">
+                    <video muted loop autoplay playsinline preload="auto" class="saas-preview"><source src="saas-video.mp4#t=0.001" type="video/mp4"></video>
+                    <div class="saas-overlay"><div class="saas-text"><h3>GEMINI AI</h3><p>PROMO</p></div></div>
+                </div>
+            </div>
+            <div class="saas-card" onclick="openVid('saas-video2.mp4', 'horizontal')">
+                <div class="saas-video-box">
+                    <video muted loop autoplay playsinline preload="auto" class="saas-preview"><source src="saas-video2.mp4#t=0.001" type="video/mp4"></video>
+                    <div class="saas-overlay"><div class="saas-text"><h3>CLAUDE CODE</h3><p>EXPLAINER</p></div></div>
+                </div>
+            </div>
+            <div class="saas-card" onclick="openVid('saas-video3.mp4', 'horizontal')">
+                <div class="saas-video-box">
+                    <video muted loop autoplay playsinline preload="auto" class="saas-preview"><source src="saas-video3.mp4#t=0.001" type="video/mp4"></video>
+                    <div class="saas-overlay"><div class="saas-text"><h3>BASE44</h3><p>UI ANIMATION</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="exp-section">
+        <p class="section-label">EXPERIENCE & TOOLKIT</p>
+        <div class="exp-container">
+            <div class="exp-left">
+                <h2>4 YEARS</h2>
+                <p>PROFESSIONAL VIDEO EDITING & MOTION DESIGN.</p>
+            </div>
+            <div class="exp-right">
+                <div class="tool-item">AFTER EFFECTS</div>
+                <div class="tool-item">PREMIERE PRO</div>
+                <div class="tool-item">DAVINCI RESOLVE</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeVid()">
+        <span class="close-btn">&times;</span>
+        <div id="modal-container" class="modal-content">
+            <video id="player" controls autoplay><source src="" type="video/mp4"></video>
+        </div>
+    </div>
+
+    <footer>
+        <h2>READY TO BUILD<span class="orange-text">?</span></h2>
+        <a href="https://www.instagram.com/1stely/" target="_blank" class="cta-btn">GET IN TOUCH</a>
+        <p class="copy">© 2024 ASTEL. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        function openVid(file, type) {
+            const m = document.getElementById('modal');
+            const p = document.getElementById('player');
+            const container = document.getElementById('modal-container');
+            if(type === 'horizontal') { container.style.aspectRatio = "16/9"; container.style.maxWidth = "1100px"; }
+            else { container.style.aspectRatio = "9/16"; container.style.maxWidth = "420px"; }
+            p.src = file; m.style.display = 'flex'; p.load(); p.play();
+        }
+        function closeVid() {
+            const m = document.getElementById('modal');
+            const p = document.getElementById('player');
+            m.style.display = 'none'; p.pause(); p.src = "";
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('grow'); });
+        }, { threshold: 0.2 });
+        document.querySelectorAll('.root').forEach(root => observer.observe(root));
+    </script>
+</body>
+</html>
